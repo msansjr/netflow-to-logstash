@@ -2,7 +2,7 @@
 Small standalone service that receives netflow packets from palo alto firewalls and forwards them to logstash via TCP/json
 
 ## Why?
-The way that palo alto firewalls format netflow packets makes the logstash collector drop packets and waste too much CPU (https://github.com/logstash-plugins/logstash-codec-netflow/issues/85#issuecomment-434915163)
+The way that palo alto firewalls format netflow packets makes the logstash collector drop packets and waste too much CPU (https://github.com/logstash-plugins/logstash-codec-netflow/issues/85)
 
 This program was designed from the ground up to allocate every UDP and Netflow buffer at the start so that its memory footprint could be small and fixed in time.
 
